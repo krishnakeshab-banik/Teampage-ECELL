@@ -1,8 +1,5 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
-export default defineConfig({
-  base: '/ecell-team/', // Match your repository name
-  plugins: [react()],
-});
+// vite.config.js
+export default {
+  base: '/ecell-team/', // Ensure this matches your Vercel deployment URL path
+};
 
