@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #101010; /* Background color for the body */
+  color: white; /* Default text color */
+}
+
+h1, h2, h3 {
+  margin: 0; /* Remove default margin */
+}
+
+.team-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the section fills the viewport */
+  padding: 2rem;
+  background-color: #121212; /* Background color for the team section */
+  color: white; /* Text color for the team section */
+}
+
+.team-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #20B475; /* Title color */
+  font-weight: 700; /* Bold font weight */
+}
+
+.team-subtitle {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  font-weight: 500; /* Semi-bold font weight */
+}
+
+.team-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #101010;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.domain-selector-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Positions arrows at the edges */
+  margin-bottom: 2rem;
+  color: #ffffff; /* Text color for domain selector */
+  font-weight: 700; /* Bold font weight */
+  font-size: 2rem; /* Font size for domain title */
+  text-align: center;
+}
+
+.domain-arrow {
+  width: 50px; /* Ensures proper size */
+  height: 50px;
+  border-radius: 12px; /* Matches the rounded rectangle style */
+  background-color: #004d00; /* Dark green background */
+  border: none; /* Removes border */
+  color: #ffffff; /* White arrow color */
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease; /* Smooth hover effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Subtle shadow effect */
+}
+
+.domain-arrow:hover {
+  background-color: #006600; /* Slightly brighter green on hover */
+}
+
+.team-members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  justify-content: center; /* Ensures members are centered */
+  margin-top: 1rem;
+}
+
+.member-card {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #00ff00; /* Border color for member cards */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #054234; /* Background color for member cards */
+  color: rgb(255, 255, 255); /* Text color for member cards */
+}
+
+footer {
+  margin-top: auto; /* Pushes the footer to the bottom */
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-color: #0d0d0d; /* Background color for footer */
+  color: #ffffff; /* Text color for footer */
+  font-size: 1rem; /* Font size for footer */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .domain-selector-container {
+    flex-direction: row; /* Aligns arrows and title properly */
+  }
+
+  .domain-arrow {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem; /* Smaller font size for arrows */
+  }
+
+  .team-subtitle {
+    font-size: 1.5rem; /* Smaller font size for subtitles */
+  }
+}
