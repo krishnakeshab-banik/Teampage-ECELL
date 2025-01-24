@@ -1,5 +1,4 @@
-// vite.config.js
 export default {
-  base: '/ecell-team/', // Ensure this matches your Vercel deployment URL path
+  base: '/ecell-team/',  // Set to the sub-path where your app is hosted
 };
 
