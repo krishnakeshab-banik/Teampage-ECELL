@@ -31,13 +31,13 @@ The E-Cell Teampage is designed to showcase the team members of the E-Cell Club 
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/krishnakeshab-banik/ecell_teampage.git
+   git clone https://github.com/krishnakeshab-banik/Teampage-ECELL.git
    ```
 
 2. **Navigate to the Project Directory:**
 
    ```bash
-   cd ecell_teampage
+   cd Teampage-ECELL
    ```
 
 3. **Open the Project:**
